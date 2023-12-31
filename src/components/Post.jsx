@@ -14,14 +14,14 @@ import { Favorite, Share } from "@mui/icons-material";
 import Checkbox from "@mui/material/Checkbox";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 
-const Post = () => {
+const Post = ({data}) => {
     const currentDate = new Date().toLocaleDateString("tr-TR");
   return (
     <Card sx={{margin:5}}>
     <CardHeader
       avatar={
         <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
-          R
+          M
         </Avatar>
       }
       action={
@@ -29,16 +29,19 @@ const Post = () => {
           <MoreVert />
         </IconButton>
       }
-      title="mehmet Doğan"
+      title="Mehmet Doğan"
       subheader={currentDate}
     />
     <CardMedia
       component="img"
       height="20%"
-      image="https://m.media-amazon.com/images/I/71k3GhD2P0L._AC_UF1000,1000_QL80_.jpg"
+      image={data.img}
       alt="Paella dish"
     />
     <CardContent>
+      <Typography variant="h5" color="text.secondary">
+        {data.title}
+      </Typography>
       <Typography variant="body2" color="text.secondary">
         This impressive paella is a perfect party dish and a fun meal to
         cook together with your guests. Add 1 cup of frozen peas along with

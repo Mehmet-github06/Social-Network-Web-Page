@@ -19,7 +19,8 @@ const Rightbar = () => {
       
       flex={1}
       p={2}
-      sx={{ display: { xs: "none", sm: "block" } }}
+      sx={{ display: { xs: "none", sm: "block" } ,mr:"5px"}}
+
     >
       <Box position={"fixed"} width={300}>
         <Typography variant="h6" fontWeight={100}>

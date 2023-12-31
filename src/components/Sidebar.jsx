@@ -15,9 +15,11 @@ import SettingsSuggestSharpIcon from "@mui/icons-material/SettingsSuggestSharp";
 import AccountBoxSharpIcon from "@mui/icons-material/AccountBoxSharp";
 import Switch from "@mui/material/Switch";
 import NightlightSharpIcon from "@mui/icons-material/NightlightSharp";
-const Sidebar = () => {
+import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
+
+const Sidebar = ({ mode, setMode }) => {
   return (
-    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+    <Box flex={1} p={1} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position={"fixed"}>
         <List>
           <ListItem disablePadding>
@@ -79,9 +81,15 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#profile">
               <ListItemIcon>
-                <NightlightSharpIcon />
+                {mode === "light" ? (
+                  <NightlightSharpIcon />
+                ) : (
+                  <WbSunnyRoundedIcon />
+                )}
               </ListItemIcon>
-              <Switch defaultChecked />
+              <Switch
+                onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+              />
             </ListItemButton>
           </ListItem>
         </List>
