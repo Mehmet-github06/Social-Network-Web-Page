@@ -22,14 +22,7 @@ You can access the live version of the project [here](https://react-mui-project-
 1. Clone or download this repository to your local machine.
 2. Open the `index.html` file in a web browser.
 
-## Features
 
-- View a list of products with images, titles, descriptions, and prices.
-- Filter products by category and search for specific items.
-- Add products to the shopping cart.
-- View details about each product in a modal.
-- Remove items and adjust quantities in the shopping cart.
-- See the total amount in the shopping cart.
 
 ## Screenshot
 
