@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="https://github.com/furkan-dogu/E-Trade-Web-Page/blob/main/assets/e-trade.gif" />
+  <img src="./public/Animation.gif" />
 </div>
 
-# Shopping App
+# Social Network Web Page
 
-Welcome to the Shopping App! This web application allows users to explore products, add them to the shopping cart, and view details about each product. It is built using HTML and JavaScript, with additional dependencies such as Bootstrap and Font Awesome.
+Welcome to the Social Networking Web Page! This web application is the social network web home page intended to exemplify the use of MUI. It includes photos, friends and chat section, and also has dark and light modes.
 
 ## Table of Contents
 
