@@ -15,7 +15,7 @@ Welcome to the Social Networking Web Page! This web application is the social ne
 
 ## Live Project Link
 
-You can access the live version of the project [here](https://e-trade-web-page.vercel.app/).
+You can access the live version of the project [here](https://react-mui-project-git-main-mehmet-dogans-projects.vercel.app/).
 
 ## Installation
 
